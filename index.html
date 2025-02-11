@@ -21,10 +21,10 @@
     <header class="top-0 font-bold w-full z-50 flex justify-between items-center bg-red-700 text-white py-6 px-10 text-center">
         <div><img class="w-72 bg-white rounded-lg" src="img/logo.png" alt="Logo de Chichilo"></div>
         <div>
-        <h1 class="text-4xl font-bold">Cantina Chichilo de Buenos Aires</h1>
-        <p class="text-lg">Camarones 1901, CABA - Tel: 054-011-4584-1263</p>
+        <h1 class="text-4xl font-bold max-lg:text-xl max-xl:text-3xl">Cantina Chichilo de Buenos Aires</h1>
+        <p class="text-lg max-lg:text-sm">Camarones 1901, CABA - Tel: 054-011-4584-1263</p>
     </div>
-    <div>
+    <div class="flex gap-4 max-xl:flex-col">
         <a href="#menu" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-red-600 transition-all">Menú</a>
         <a href="#destacados" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-red-600 transition-all">Destacados</a>
         <a href="#opinion" class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-white hover:text-red-600 transition-all">Opinión</a>
@@ -38,7 +38,7 @@
             <!-- Capa oscura para mayor contraste -->
             <div class="absolute inset-0 bg-black opacity-70"></div>
             <!-- Contenedor de contenido -->
-            <div class="absolute inset-0 flex flex-col md:flex-row items-center justify-between px-10 md:px-20 gap-6">
+            <div class="absolute inset-0 flex flex-col md:flex-row items-center justify-between max-md:justify-center px-10 max-sm:py-20 max-md:gap-10">
 
                 <div class="text-white text-center md:text-left">
                     <h2 class="text-3xl md:text-5xl font-extrabold tracking-wide">Bienvenido a la Cantina Chichilo</h2>
@@ -56,39 +56,39 @@
 
  <section id="destacados" class="py-10 text-center">
     <h2 class="text-4xl font-bold text-red-800">Platos destacados</h2>
-    <section class="py-12">
-        <div class="container mx-auto px-6 md:px-12">
+    <div class="py-12">
+        <div class="container mx-auto px-8 md:px-12">
             <!-- Contenedor del Carrusel -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide bg-red-700 p-6 rounded-lg shadow-lg">
+                    <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
                         <img src="img/ranas.avif" alt="Ranas a la Provenzal" class="w-full h-48 object-cover rounded-lg">
                         <h3 class="text-xl font-semibold mt-4 text-white">Ranas a la Provenzal</h3>
-                        <p class="text-yellow-400 text-lg font-bold">$105</p>
+                        <p class="text-white text-lg font-bold">$105</p>
                     </div>
 
-                    <div class="swiper-slide bg-red-700 p-6 rounded-lg shadow-lg">
+                    <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
                         <img src="img/caracoles.jpg" alt="Caracoles a la bordaleza" class="w-full h-48 object-cover rounded-lg">
                         <h3 class="text-xl font-semibold mt-4 text-white">Caracoles a la bordaleza</h3>
-                        <p class="text-yellow-400 text-lg font-bold">$50</p>
+                        <p class="text-white text-lg font-bold">$50</p>
                     </div>
 
-                    <div class="swiper-slide bg-red-700 p-6 rounded-lg shadow-lg">
+                    <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
                         <img src="img/mondongo.jpg" alt="Mondongo a la Italiana" class="w-full h-48 object-cover rounded-lg">
                         <h3 class="text-xl font-semibold mt-4 text-white">Mondongo a la Italiana</h3>
-                        <p class="text-yellow-400 text-lg font-bold">$50</p>
+                        <p class="text-white text-lg font-bold">$50</p>
                     </div>
 
-                    <div class="swiper-slide bg-red-700 p-6 rounded-lg shadow-lg">
+                    <div class="swiper-slide bg-gray-800 p-6 rounded-lg shadow-lg">
                         <img src="img/pasta.jpg" alt="Pasta con Chichiri-Ceci" class="w-full h-48 object-cover rounded-lg">
                         <h3 class="text-xl font-semibold mt-4 text-white">Pasta con Chichiri-Ceci</h3>
-                        <p class="text-yellow-400 text-lg font-bold">$250</p>
+                        <p class="text-white text-lg font-bold">$250</p>
                     </div>
 
-                    <div class="swiper-slide object-cover object-center bg-red-700 p-6 rounded-lg shadow-lg">
-                        <img src="img/quinotos.png" alt="Flan Casero Mixto" class="w-full h-48 object-cover rounded-lg">
+                    <div class="swiper-slide object-cover object-center bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <img src="img/quinotos.png" alt="Quinotos caseros" class="w-full h-48 object-cover rounded-lg">
                         <h3 class="text-xl font-semibold mt-4 text-white">Quinotos Caseros en Almibar</h3>
-                        <p class="text-yellow-400 text-lg font-bold">$120</p>
+                        <p class="textwhite text-lg font-bold text-white">$120</p>
                     </div>
                 </div>
                 
@@ -100,7 +100,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </div>
 </section>
 
 
@@ -179,11 +179,11 @@
                             <tr><td>Pasta con Chichiri-Ceci</td><td class="text-right">$250</td></tr>
                         </tbody>
                     </table>
-                    <section id="especialidades" class="py-10 max-w-3xl shadow-2xl bg-gray-600 rounded-xl mx-auto text-center">
-                        <h2 class="text-3xl font-semibold text-yellow-500">Especialidades</h2>
+                    <section id="especialidades" class="py-10 max-w-3xl shadow-2xl rounded-xl mx-auto text-center border-gray-700 border-2 text-white">
+                        <h2 class="text-3xl font-semibold text-white">Especialidades</h2>
                         <ul class="mt-4 text-lg">
-                            <li class="py-2 border-b border-yellow-500">🍲 Lentejas a Caballo</li>
-                            <li class="py-2 border-b border-yellow-500">🍝 Pasta con Chichiri-Ceci</li>
+                            <li class="py-2 border-b border-gray-700">🍲 Lentejas a Caballo</li>
+                            <li class="py-2 border-b border-gray-700">🍝 Pasta con Chichiri-Ceci</li>
                             <li class="py-2">🍖 Mondongo a la Italiana</li>
                         </ul>
                         
@@ -197,7 +197,7 @@
                 <div class="bg-gray-800 rounded-lg shadow-lg p-6">
                     <table class="w-full text-left">
                         <thead>
-                            <tr class="border-b border-yellow-500">
+                            <tr class="border-b border-white">
                                 <th class="py-2 text-lg">Plato</th>
                                 <th class="py-2 text-lg text-right">Precio</th>
                             </tr>
@@ -240,11 +240,11 @@
     <div class="container mx-auto text-center">
         <p class="text-lg font-semibold">&copy; 2025 Cantina Chichilo - Todos los derechos reservados</p>
         <div class="mt-4 flex justify-center space-x-6">
-            <a href="#menu" class="hover:text-yellow-400 transition-all">Menú</a>
-            <a href="#destacados" class="hover:text-yellow-400 transition-all">Destacados</a>
-            <a href="#opinion" class="hover:text-yellow-400 transition-all">Opinión</a>
-            <a href="https://www.instagram.com/cantinachichilo" target="_blank" class="hover:text-yellow-400 transition-all">Instagram</a>
-            <a href="https://www.facebook.com/cantinachichilo" target="_blank" class="hover:text-yellow-400 transition-all">Facebook</a>
+            <a href="#menu" class="hover:text-white transition-all">Menú</a>
+            <a href="#destacados" class="hover:text-white transition-all">Destacados</a>
+            <a href="#opinion" class="hover:text-white transition-all">Opinión</a>
+            <a href="https://www.instagram.com/cantinachichilo" target="_blank" class="hover:text-white transition-all">Instagram</a>
+            <a href="https://www.facebook.com/cantinachichilo" target="_blank" class="hover:text-white transition-all">Facebook</a>
         </div>
         <p class="mt-4 text-sm opacity-75">Camarones 1901, CABA - Tel: 054-011-4584-1263</p>
     </div>
